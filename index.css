@@ -13,7 +13,7 @@ body{
     width: 100%;
     height: 8vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: bisque;
     color: rgb(36, 35, 35);
 }
@@ -26,11 +26,12 @@ body{
 }
 .title{
     font-size: 2rem;
+    margin-left: 10px;
 }
 .btn{
     font-size: 1.6rem;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -60,4 +61,43 @@ input{
     text-align: center;
     color: rgb(50, 67, 82);
     border-radius: 8px;
+}
+
+@media screen and ( max-width: 800px ) {
+    .controls{
+        height: 8vh;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .title{
+        margin-left: 10px;
+    }
+}
+
+@media screen and ( max-width: 472px ) {
+    .controls{
+        height: 20vh;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .title{
+        font-size: 1.4rem;
+        margin-left: 10px;
+    }
+
+    .btn {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 10px;
+        
+    }
+
+    #radius {
+        width: 60px;
+    }
+
+    
+
+    
 }
